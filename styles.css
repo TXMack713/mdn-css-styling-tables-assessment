@@ -1,24 +1,73 @@
 html,
 body {
-  margin: 0;
-  padding: 0;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  overflow: auto;
-  word-break: break-all;
-  hyphens: auto;
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    overflow: auto;
+    word-break: break-all;
+    hyphens: auto;
 }
 
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 body {
-  background-color: rosybrown;
+    background-color: blanchedalmond;
 }
 table {
-  font-size: 75%;
+    font-size: 75%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-top: 2px solid darkslateblue;
+    border-bottom: 2px solid darkslateblue;
+}
+
+tr th:nth-child(2),
+tr th:nth-child(3),
+tr td:nth-child(2),
+tr td:nth-child(3) {
+    text-align: right;
+}
+
+tr th:nth-child(1),
+tr td:nth-child(1),
+tr th:nth-child(4),
+tr td:nth-child(4) {
+    text-align: left;
+}
+
+thead, tfoot {
+    font-size: 0.875rem;
+}
+
+th, td {
+    padding: 0.25em;
+}
+tfoot tr :nth-child(1){
+    text-align: right;
+}
+
+tfoot tr :nth-child(2) {
+    text-align: left;
+}
+
+tbody tr:nth-child(odd) {
+        background-color: lightsteelblue;
+ }
+
+thead {
+    border-bottom: 2px solid darkslateblue;
+}
+tfoot {
+    border-top: 2px solid darkslateblue;
+}
+
+caption {
+    font-family: "Shadows Into Light", cursive;
+    font-size: 1.125rem;
 }
